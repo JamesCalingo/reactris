@@ -6,4 +6,4 @@ function Display ({ gameover, text }) {
   )
 }
 
-export default Dipslay;
+export default Display;

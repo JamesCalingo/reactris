@@ -2,6 +2,7 @@ import React from "react";
 import Stage from "./Stage"
 import Display from "./Display"
 import Start from "./Start"
+import { createStage } from "../gameHelpers";
 
 
 function Tetris () {
@@ -9,7 +10,7 @@ function Tetris () {
 
   return(
     <div>
-      <Stage />
+      <Stage  stage = {createStage()}/>
       <aside>
         <Display text = "Score" />
         <Display text = "Lines" />
