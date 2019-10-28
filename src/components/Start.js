@@ -2,7 +2,7 @@ import React from "react";
 
 function Start (callback){
   return(
-    <div>Start Game</div>
+    <button className="btn btn-success btn-lg">Start Game</button>
   );
 };
 
