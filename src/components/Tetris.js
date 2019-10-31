@@ -10,7 +10,7 @@ import { createStage } from "../gameHelpers"
 function Tetris () {
 
 const [dropTime, setDropTime] = useState(null);
-const [gameover, setGameOver] = useState(true);
+const [gameover, setGameOver] = useState(false);
 
 const [player, updatePlayerPos, resetPlayer] = usePlayer ();
 const [stage, setStage] = useStage(player)
@@ -35,13 +35,13 @@ drop()
 
 const move = ([ keyCode ]) => {
 if(!gameover){
-  if(e.keyCode  === 37){
+  if(keyCode  === 37){
     movePlayer(-1)
   }
-  else if(e.keyCode === 39){
+  else if(keyCode === 39){
     movePlayer(1)
   }
-  else if(e.keyCode === 40){
+  else if(keyCode === 40){
     dropPlayer()
   }
 }
