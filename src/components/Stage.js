@@ -1,6 +1,6 @@
 import React from "react";
 import Cell from "./Cell";
-import { createStage } from "../gameHelpers"
+
 import { StyledStage } from "./styles/StyledStage"
 
 function Stage ({ stage }) {

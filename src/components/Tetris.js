@@ -50,7 +50,7 @@ if(!gameover){
   return(
     <StyledTetrisWrapper role="button" tabIndex="0" onKeyDown={e =>move[e]}>
       <StyledTetris>
-      <Stage  stage = {stage}/>
+      <Stage  stage = {createStage()} />
       <aside>
         {gameover ? (
           <div>
@@ -64,7 +64,7 @@ if(!gameover){
         <Display text = "Score" />
         <Display text = "Lines" />
         <Display text = "Level" />
-        <Start onClick={startGame} />
+        <Start click={startGame} />
         </div>
         )}
         
