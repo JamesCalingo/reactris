@@ -26,6 +26,6 @@ const newStage = prevStage.map(row =>
   }
 
   setStage(prev => updateStage)
-}, [player])
+}, [player.collided, player.pos.x, player.pos.y, player.tetromino])
   return [stage, setStage];
 }
